@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<main class="main">
+    <section class="container-main">
+        <div class="center">
+            <div class="banner-home">
+                <div class="heading-block">
+                    <h1 class="heading-primary heading-primary--banner">Websites . Responsive . Mobile Compatible.</h1>
+                    <div class="sub-heading sub-heading--banner">Create a creative and responsive site with us!</div>
+                </div>
+                <div class="banner-img-block clearfix">
+                    <div class="banner-img banner-img-1">
+                        <div class="overlay"></div>
+                        <div class="banner-img-text">
+                            <h1 class="heading-primary">Technology</h1>
+                            <h2 class="heading-secondary">Our technical team will deliver beautiful, efficient code combined with some smartest ideas</h2>
+                        </div>
+                    </div>
+                    <div class="banner-img banner-img-2">
+                        <div class="banner-img-text-center">
+                            <div class="heading-primary">HTML/CSS/JS</div>
+                            <div class="heading-primary">Web Apps</div>
+                            <div class="heading-primary">Reports/Metrics</div>
+                            <div class="heading-primary">Server Side services</div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="banner-img banner-img-3">
+                        <div class="banner-img-text">
+                            <h1 class="heading-primary">Creativity</h1>
+                            <h2 class="heading-secondary">Our creative department will provide design and invent experiences for an equal focus on concept and execution</h2>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div> <!-- /banner-img-block -->
+                <a href="@Url.Action("Overview","Home")" class="button button-hollow button-explore">Explore</a>
+                <a href="@Url.Action("Contact","Home")" class="button">Contact Whizzbrainers Now</a>
+            </div> <!-- /banner-home -->
+        </div> <!-- /center -->
+    </section> <!-- /container-main -->
+</main>
+<style>
+    .header, .nav-block {
+        background-color: #eee;
+    }
+
+    .header {
+        box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+    }
+
+    a.logo {
+        color: #9D67AD;
+    }
+
+    a.nav-trigger, .nav li a:not(.button) {
+        color: #555;
+    }
+
+    .footer {
+        display: none;
+    }
+</style>

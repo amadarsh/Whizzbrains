@@ -1,0 +1,642 @@
+﻿* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Lato", sans-serif;
+}
+
+input, select, button {
+  font-size: 17px;
+  color: #555;
+}
+
+.container-full, .container-main, .container-mid, .container-sm, .container-xs {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Helpers: Floats and Clearing */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+.clear {
+  clear: both;
+} 
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+
+/* Helpers: Typography */
+
+.heading-primary {
+  font-size: 220%;
+  font-weight: 300;
+  font-family: inherit;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.heading-secondary {
+  font-size: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;  
+}
+
+.sub-heading {
+  font-style: italic;
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+.heading-block [class|="heading"] {
+  padding-bottom: 0;
+}
+
+.ul-base {
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar {
+    margin-bottom : 0px;
+    padding : 30px 15px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #bbb;
+}
+
+.header {
+    background-color: #555;
+}
+
+footer {
+    background-color:#333;
+    color:#ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+aside {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding-top:40px;
+}
+
+section {
+    text-align: center;
+}
+
+.cbp-af-header-shrink {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    opacity: 0.9;
+}
+
+.fill-screen {
+    background-size: cover;
+    background-position: center;
+}
+
+.fill-screen-content {
+    color: #fff;
+    z-index: 1;
+    text-align: center;
+}
+
+.fixed-attachment {
+    background-attachment: fixed;
+}
+
+.title-row {
+    position: relative;
+}
+
+.title-image {
+    color: #fff;
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.title-image-header {
+    font-family: "Damion", cursive; 
+    font-size: 50px;
+}
+
+.down-button {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.down-button i {
+    color : #fff;
+}
+
+#carousel {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.carousel-inner > .item {
+  max-height:500px;
+}
+
+#carousel img {
+    width: 100%;
+    max-height: 90%;
+}
+
+
+.content-filler {
+    min-height: 350px;
+}
+
+@media (max-width: 1024px) {
+    .fixed-attachment {
+        background-attachment: scroll;
+    }
+}
+
+/*-------------------------------------*/
+/* LIGHTBOX: SIGN-UP */
+
+/* Helpers: Forms */
+
+.field-block {
+  padding: 10px 0;
+}
+
+.label {
+  font-weight: 300;
+  text-align: center;
+  padding: 0 0 10px 0;
+  display: block;
+  position: relative;
+}
+
+.label-required:after {
+  content: "*";
+  color: #CF5658;
+  margin: 0 0 0 5px;
+  font-size: 30px;
+  line-height: 0;
+  position: relative;
+  top: 12px
+}
+
+.input-text {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid #bbb;
+}
+
+.input-text, form .button {
+  min-height: 46px;  
+}
+
+.input-text:focus {
+  border: 1px solid #9D67AD;
+  outline: 0;
+}
+
+.input-text.input-error {
+  border: 1px solid #CF5658;
+}
+
+textarea.input-text {
+  min-height: 150px;
+}
+
+@media only screen and (min-width: 600px) {
+  .sign-up-each {
+    width: 100%;
+    float: left;
+  }
+}
+
+/*-------------------------------------*/
+/* GRID */
+
+.grid-parent {
+  margin-left: -15px;
+  margin-right: -15px; 
+}
+
+.grid-parent:after {
+  content: "";
+  display: table;
+  clear: both;  
+}
+
+.grid-child {
+  padding-left: 15px;
+  padding-right: 15px;   
+}
+
+/* Overview: Steps Block */
+
+.whizzbrains-steps-block {
+  padding: 20px 0 30px;
+  text-align: center;
+}
+
+.whizzbrains-steps-each {
+  color: inherit;
+  display: inline-block;
+  margin: 10px 0;
+  height: 200px;
+  width: 200px;
+}
+
+/*.whizzbrains-step-graphic {
+  max-width: 200px;
+  max-height: 100%;
+}*/
+
+.whizzbrains-steps-info {
+  text-transform: uppercase;
+}
+
+.wrench-graphic:hover .wrench-graphic-section {
+  fill: #bbb;
+}
+
+.watch-graphic:hover .watch-graphic-section, .chart-graphic:hover .chart-graphic-section {
+  fill: #9D67AD;
+}
+
+.phone-graphic:hover .phone-graphic-section {
+    fill: red;
+}
+
+/*-------------------------------------*/
+/* PAGE: HOME */
+
+.heading-primary--banner{
+    font-size: 180%;
+    text-transform: uppercase;
+    padding: 0;
+}
+/* Helpers: Overlay */
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+/* Helpers: Gradient */
+
+.overlay-gradient {
+  background-color: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Same column height*/
+/* USAGE
+<div class="row">
+  <div class="row-height">
+    <div class="col-xs-2 col-xs-height col-xs-middle">
+      <div class="inside"></div>
+    </div>
+    <div class="col-xs-4 col-lg-5 col-xs-height col-xs-middle">
+      <div class="inside"></div>
+    </div>
+  </div>
+</div>
+*/
+
+/* content styles */
+
+.inside {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #ededed;
+  background: -webkit-gradient(linear, left top, left bottom,color-stop(0%, #f4f4f4), color-stop(100%, #ededed));
+  background: -moz-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+  background: -ms-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+}
+.inside-full-height {
+  /*
+  // if you want to give content full height give him height: 100%;
+  // with content full height you can't apply margins to the content
+  // content full height does not work in ie http://stackoverflow.com/questions/27384433/ie-display-table-cell-child-ignores-height-100
+  */
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* columns of same height styles */
+
+.row-height {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+.col-height {
+  display: table-cell;
+  float: none;
+  height: 100%;
+}
+.col-top {
+  vertical-align: top;
+}
+.col-middle {
+  vertical-align: middle;
+}
+.col-bottom {
+  vertical-align: bottom;
+}
+
+@media (min-width: 480px) {
+  .row-xs-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .col-xs-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+  .col-xs-top {
+    vertical-align: top;
+  }
+  .col-xs-middle {
+    vertical-align: middle;
+  }
+  .col-xs-bottom {
+    vertical-align: bottom;
+  }
+}
+
+@media (min-width: 768px) {
+  .row-sm-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .col-sm-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+  .col-sm-top {
+    vertical-align: top;
+  }
+  .col-sm-middle {
+    vertical-align: middle;
+  }
+  .col-sm-bottom {
+    vertical-align: bottom;
+  }
+}
+
+@media (min-width: 992px) {
+  .row-md-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .col-md-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+  .col-md-top {
+    vertical-align: top;
+  }
+  .col-md-middle {
+    vertical-align: middle;
+  }
+  .col-md-bottom {
+    vertical-align: bottom;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row-lg-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .col-lg-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+  .col-lg-top {
+    vertical-align: top;
+  }
+  .col-lg-middle {
+    vertical-align: middle;
+  }
+  .col-lg-bottom {
+    vertical-align: bottom;
+  }
+}
+
+/*-------------------------------------*/
+/* ANIMATIONS */
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  visibility: visible;
+  animation-name: slideInRight;
+}
+
+
+/* Helpers: Full-width */
+
+.full-width {
+  display: block;
+  width: 100%;
+}
+
+/* Helpers: Lightbox Overrides */
+
+.popup-inline {
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+/* Contact: Google Map */
+
+.map-google-embed iframe {
+  width: 100%;
+  display: block;
+}
+
+.map-google-embed img {
+  max-width: none;
+}
+
+/* Tag cloud*/
+#tag-cloud {
+	width: 200px;
+	margin-left: 0;
+}
+.tag-cloud {
+    background-color: #999999;
+    -webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 21px;
+    margin: 2px 3px 2px 2px;
+    padding: 1px 4px 2px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    vertical-align: baseline;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+/*.tag-cloud:after {
+    color: #000000;
+    content: " ×";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 16px;
+    opacity: 0.2;
+	position: relative;
+    text-shadow: 0 1px 0 #FFFFFF;
+	top: 1px;
+}*/
+
+	/* Colors */
+
+.tag-cloud.tag-cloud-info {
+    background-color: #3A87AD;
+}
+.tag-cloud.tag-cloud-success {
+    background-color: #468847;
+}
+.tag-cloud.tag-cloud-warning {
+    background-color: #F89406;
+}
+.tag-cloud.tag-cloud-danger {
+    background-color: #B94A48;
+}
+.tag-cloud.tag-cloud-inverse {
+    background-color: #333333;
+}

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhizzBrains", "WhizzBrains\WhizzBrains.csproj", "{6AEF08DB-CDE8-4ECF-A094-41271AAD5883}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhizzBrains2", "WhizzBrains2\WhizzBrains2.csproj", "{1AF6DB4E-0124-4586-BDDB-27148168CED2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AEF08DB-CDE8-4ECF-A094-41271AAD5883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AEF08DB-CDE8-4ECF-A094-41271AAD5883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AEF08DB-CDE8-4ECF-A094-41271AAD5883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AEF08DB-CDE8-4ECF-A094-41271AAD5883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AF6DB4E-0124-4586-BDDB-27148168CED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF6DB4E-0124-4586-BDDB-27148168CED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF6DB4E-0124-4586-BDDB-27148168CED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF6DB4E-0124-4586-BDDB-27148168CED2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

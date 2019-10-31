@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "Team";
+}
+<div class="main">
+    <section class="container-main">
+        <h1 class="heading-primary">Our Team</h1>
+
+        <ul class="team-block grid-parent ul-base">
+            <li class="team-each grid-child">
+                <img src="~/Content/Images/Team/Adarsh_achar.jpg" alt="Adarsh Achar" />
+                <div class="team-each-member">Adarsh achar</div>
+                <div class="team-each-role">Co-Founder &amp; .Net Technical Lead</div>
+
+            <li class="team-each grid-child">
+                <img src="~/Content/Images/Team/Adarsh_SK.jpg" alt="Adarsh Krishnamurthy" />
+                <div class="team-each-member">Adarsh Krishnamurthy</div>
+                <div class="team-each-role">Co-Founder &amp; UI/UX Expert</div>
+
+
+            <li class="team-each grid-child">
+                <img src="~/Content/Images/Team/Sachin_Jambur.png" alt="Sachin Jambur" />
+                <div class="team-each-member">Sachin Jambur</div>
+                <div class="team-each-role">Co-Founder &amp; Lead Architect</div>
+        </ul>
+    </section>
+
+    <section class="join-block">
+        <div class="background-block background-block--job">
+            <div class="background-block-content container-sm">
+                <h2 class="heading-secondary">Our Mission</h2>
+                <p>
+                    Change the way your current businesses work and make it seamless for you and your customers in every aspect of day to day computing.
+                </p>
+                <h2 class="heading-secondary">Our Vision</h2>
+                <p>
+                    To grow into a true Technology company and provide a platform for everyone to grow along with us.
+                </p>
+                <h2 class="heading-secondary">Our Principles</h2>
+                <p>
+                    Fairness and Transparancy with a passion to Technology and thrive to drive businesses worldwide.
+                </p>
+            </div>
+            <div class="overlay"></div>
+        </div>
+    </section>
+</div>
+
+<div class="form-join-block"  style="display:none;">
+    <form class="form-join js-form-validate">
+        <div class="heading-block">
+            <h2 class="heading-secondary">Work with WHIZZBrains</h2>
+            <div class="sub-heading">Drop us a line if you have what it takes</div>
+        </div>
+        <div class="container-mid">
+            <div class="grid-parent">
+                <div class="grid-child form-join-each">
+                    <div class="field-block">
+                        <label for="join-input-name" class="label label-required">Your Name</label>
+                        <input type="text" class="input-text input-required" id="join-input-name">
+                    </div>
+                </div>
+
+                <div class="grid-child form-join-each">
+                    <div class="field-block">
+                        <label for="join-input-email" class="label label-required">Your Email</label>
+                        <input type="email" class="input-text input-required" id="join-input-email">
+                    </div>
+                </div>
+
+                <div class="grid-child form-join-each">
+                    <div class="field-block">
+                        <label for="join-input-role" class="label label-required">Your role</label>
+                        <select id="join-input-role" class="input-text input-required">
+                            <option value="">Select a value</option>
+                            <option value="senior-web-developer">senior-web-developer</option>
+                            <option value="junior-developer">junior-developer</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="field-block">
+                <label for="join-input-info" class="label label-required">Your skill set</label>
+                <textarea class="input-text input-required" id="join-input-info"></textarea>
+            </div>
+
+            <div class="field-block center">
+                <input type="submit" class="button" value="Get in touch">
+            </div>
+        </div>
+    </form>
+</div>
+
